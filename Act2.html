@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+    <style>
+    body{
+        background-color: cadetblue;
+        padding: 75px;
+    }
+    #col{
+        background-color: rgb(19, 177, 19);
+        width: 150px;
+        height: 100px;
+        padding: 20px;
+
+    }
+    .container {
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        padding: 3px;
+        background-color: cadetblue;
+        }
+    .con2{
+        border: 7px solid #ccc;
+        border-color: black;
+        border-radius: 20px;
+        background-color: rgb(195, 189, 189);
+        height: 350px;
+        padding: 20px;
+        }
+    button{
+        background-color: cadetblue;
+        font-family:monospace;
+        width: 100px;
+    }
+    h1{
+        font-family: monospace;
+        font-style: italic;
+    }
+    </style>
+    </head>
+<body>
+    <div class="con2">
+    <div class="container">
+    <h1> JavaScript colorChanger() Hands-On</h1>
+        </div><br>
+    
+    <div id="col">
+    </div><br>
+    <button id="but">Change Color</button>
+    </div>
+
+<script>
+    let colorBox = document.getElementById("col");
+    let but = document.getElementById("but");
+
+    but.addEventListener("click", changeColor)
+
+    function changeColor(){
+
+        if (colorBox.style.backgroundColor==="rgb(19, 177, 19)"){ 
+            colorBox.style.backgroundColor='blue'
+        } else {
+            colorBox.style.backgroundColor="rgb(19, 177, 19)";
+        }
+    }
+</script>
+</body>
+</html>
